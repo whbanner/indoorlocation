@@ -1,5 +1,8 @@
 package com.example.domain;
 
-public class ReceiveBean
-{
+public class ReceiveBean {
+    private String receivename;
+    private String x;
+    private String y;
+
 }
