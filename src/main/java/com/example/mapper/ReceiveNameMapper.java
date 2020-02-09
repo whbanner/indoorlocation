@@ -1,4 +1,7 @@
 package com.example.mapper;
 
-public interface ReceiveNameMapper   {
+import org.apache.ibatis.annotations.Param;
+
+public interface ReceiveNameMapper {
+    String findRName(@Param("ReceiveName")String ReceiveName);
 }
