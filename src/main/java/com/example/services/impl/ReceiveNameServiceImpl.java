@@ -5,14 +5,15 @@ import com.example.services.ReceiveNameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("rn")
 public class ReceiveNameServiceImpl implements ReceiveNameService {
+
     @Autowired
-    ReceiveNameMapper rn;
+    private ReceiveNameMapper receiveNameMapper;
 
     @Override
     public String findRName(String rName) {
 
-        return rn.findRName(rName);
+        return receiveNameMapper.findRName(rName);
     }
 }
