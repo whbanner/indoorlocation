@@ -1,5 +1,6 @@
 package com.example.services.impl;
 
+import com.example.domain.ReceiveBean;
 import com.example.mapper.ReceiveNameMapper;
 import com.example.services.ReceiveNameService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ public class ReceiveNameServiceImpl implements ReceiveNameService {
     private ReceiveNameMapper receiveNameMapper;
 
     @Override
-    public String findRName(String rName) {
+    public ReceiveBean findRName(String rName) {
 
         return receiveNameMapper.findRName(rName);
     }

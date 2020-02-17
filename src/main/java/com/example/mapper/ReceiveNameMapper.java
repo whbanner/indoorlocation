@@ -1,9 +1,10 @@
 package com.example.mapper;
 
-import org.apache.ibatis.annotations.Param;
+import com.example.domain.ReceiveBean;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
-
+@Mapper
 @Repository("receiveNameMapper")
 public interface ReceiveNameMapper {
-    String findRName(@Param("ReceiveName")String ReceiveName);
+    ReceiveBean findRName(String ReceiveName);
 }

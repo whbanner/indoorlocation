@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
 <mapper namespace="com.example.mapper.ReceiveNameMapper">
-    <select id="findRName" resultType="java.lang.String">
+    <select id="findRName" resultType="com.example.domain.ReceiveBean">
         select * from login where username=#{username}
     </select>
     <select id="findSname" resultType="java.lang.String">

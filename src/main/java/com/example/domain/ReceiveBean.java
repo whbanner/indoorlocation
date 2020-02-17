@@ -9,5 +9,6 @@ public class ReceiveBean {
     private String receivename;
     private String x;
     private String y;
+    private String password;
 
 }

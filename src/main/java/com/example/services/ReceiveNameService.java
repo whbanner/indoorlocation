@@ -1,10 +1,10 @@
 package com.example.services;
 
 
-
+import com.example.domain.ReceiveBean;
 
 public interface ReceiveNameService {
 
 
-    String findRName(String rName);
+    ReceiveBean findRName(String rName);
 }
