@@ -13,6 +13,7 @@ public class Point
 
 	public boolean equals(Object o)
 	{
+
 		return o != null && o instanceof Point && ((Point)o).x == x && ((Point)o).y == y;
 	}
 }
