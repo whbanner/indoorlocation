@@ -13,4 +13,5 @@
     <select id="findsid" resultType="java.lang.Integer">
         select sid from login where username=#{username}
     </select>
+
 </mapper>
