@@ -7,4 +7,7 @@ public interface ReceiveNameService {
 
 
     ReceiveBean findRName(String rName);
+
+
+    String findAname(Integer aid);
 }

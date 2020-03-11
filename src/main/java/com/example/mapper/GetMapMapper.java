@@ -10,4 +10,5 @@ public interface GetMapMapper {
 
     void insertPoint(@Param("column") String column, Integer aid, @Param("value") String value, Integer x, Integer y, Integer z);
 
+
 }

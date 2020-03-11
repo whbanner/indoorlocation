@@ -14,4 +14,7 @@
         select sid from login where username=#{username}
     </select>
 
+    <select id="findAname" resultType="java.lang.String">
+        SELECT Aname FROM alltable where aid=#{aid}
+    </select>
 </mapper>

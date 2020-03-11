@@ -17,4 +17,9 @@ public class ReceiveNameServiceImpl implements ReceiveNameService {
 
         return receiveNameMapper.findRName(rName);
     }
+
+    @Override
+    public String findAname(Integer aid) {
+        return receiveNameMapper.findAname(aid);
+    }
 }

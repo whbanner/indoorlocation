@@ -12,6 +12,6 @@ public interface ReceiveNameMapper {
     ReceiveBean findRName(String ReceiveName);
 
 
-
+    String findAname(Integer aid);
 
 }
